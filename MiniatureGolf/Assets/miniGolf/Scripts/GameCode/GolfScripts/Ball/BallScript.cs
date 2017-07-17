@@ -777,7 +777,7 @@ public class BallScript : MonoBehaviour
 		
 		float currentForce = m_currentPower * ballForce;
 		
-		GetComponent<Rigidbody>().isKinematic=true;
+		//GetComponent<Rigidbody>().isKinematic=false;
 		//fire teh ball if the left mouse button is pressed
 		bool requestsFire = false;
 		if(Misc.isMobilePlatform())
