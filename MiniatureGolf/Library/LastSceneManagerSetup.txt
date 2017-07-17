@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Holes.unity
+- path: Assets/miniGolf/Scenes/golf_menu.unity
   isLoaded: 1
   isActive: 1
