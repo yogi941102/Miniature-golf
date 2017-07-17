@@ -12,11 +12,10 @@ public class test : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("hahaha");
+        
         time += Time.deltaTime;
         if (time >=2)
         {
-            Debug.Log("hahaha");
             Instantiate(FishPrefab[Random.Range(0, FishPrefab.Length)]);
             time = 0;
         }
