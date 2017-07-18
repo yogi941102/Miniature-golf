@@ -250,7 +250,7 @@ public class ScoreState : BaseMenuState {
 		for(int i=0; i<2; i++)
 		{
 			
-			for(int j=0; j<9; j++)
+			for(int j=0; j<2; j++)
 			{
 				int score = m_gameScript.getTotalScoreAtHole(n);
 				int par = m_gameScript.getParForHole(n);
