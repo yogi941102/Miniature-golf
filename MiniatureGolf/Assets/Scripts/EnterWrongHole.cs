@@ -7,6 +7,7 @@ public class EnterWrongHole : MonoBehaviour {
     public GameObject[] ballhPrefab;
     public GameObject ballCreator;
     public GameObject camera;
+    private int index;
         
     // Use this for initialization
     void Start () {
@@ -18,8 +19,9 @@ public class EnterWrongHole : MonoBehaviour {
         
         if (ball == null)
         {
-            ball = Instantiate(ballhPrefab[Random.Range(0, ballhPrefab.Length)], ballCreator.transform.position, Quaternion.identity);
-            ball.name = "Ball";
+            index = Random.Range(0, ballhPrefab.Length);
+            ball = Instantiate(ballhPrefab[index], ballCreator.transform.position, Quaternion.identity);
+            ball.name = "Ball"+index;
             BallScript ballscript = ball.GetComponent<BallScript>();
             ballscript.m_ballMode = BallScript.BallMode.AIM;
             Rigidbody ballrigibody = ball.GetComponent<Rigidbody>();

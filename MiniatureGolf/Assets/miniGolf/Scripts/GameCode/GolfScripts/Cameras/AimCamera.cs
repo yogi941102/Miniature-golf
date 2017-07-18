@@ -162,7 +162,7 @@ public class AimCamera : MonoBehaviour
 	
 	void rotateCam(float dt)
 	{
-		BallScript ballScript = (BallScript)GameObject.FindObjectOfType( typeof(BallScript));
+		BallScript ballScript = (BallScript)GameObject. FindObjectOfType( typeof(BallScript));
 		Camera camera0 = Camera.main;
 		
 		
