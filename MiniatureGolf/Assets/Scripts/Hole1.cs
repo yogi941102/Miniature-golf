@@ -21,6 +21,7 @@ public class Hole1 : MonoBehaviour {
             Debug.Log("win1");
             canvas.SetActive(true);
             cube.SetActive(false);
+            
         }
     }
 }
